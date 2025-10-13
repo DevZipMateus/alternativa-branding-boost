@@ -1,0 +1,98 @@
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
+
+const Hero = () => {
+  const scrollToContact = () => {
+    const element = document.getElementById("contact");
+    if (element) {
+      const offset = 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  return (
+    <section id="hero" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-secondary/5"></div>
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMwMDAiIGZpbGwtb3BhY2l0eT0iMC4wMiI+PHBhdGggZD0iTTM2IDM0djItaDJ2LTJoLTJ6bTAgNGgtMnYyaDJ2LTJ6bS0yLTJoLTJ2Mmgydi0yem0yLTJoMnYtMmgtMnYyem0tMiAwdi0yaC0ydjJoMnptMi00aDJ2LTJoLTJ2MnptMCAwaC0ydjJoMnYtMnoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-40"></div>
+      </div>
+
+      <div className="section-container">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Content */}
+          <div className="space-y-8 animate-fade-in">
+            <div className="space-y-4">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+                <span className="text-primary">ALTERNATIVA</span>
+                <br />
+                <span className="text-foreground">EMBALAGENS</span>
+              </h1>
+              <h2 className="text-xl md:text-2xl text-muted-foreground max-w-2xl">
+                Há mais de 25 anos oferecendo soluções completas em embalagens, produtos descartáveis e de limpeza para o seu negócio
+              </h2>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button
+                size="lg"
+                onClick={scrollToContact}
+                className="bg-primary text-primary-foreground hover:bg-primary/90 text-base h-12 px-8"
+              >
+                Solicitar orçamento
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                onClick={() => window.open("https://wa.me/5562995480899", "_blank")}
+                className="text-base h-12 px-8 border-primary/60 text-foreground hover:bg-primary/10 hover:text-foreground hover:border-primary"
+              >
+                WhatsApp
+              </Button>
+            </div>
+
+            <div className="pt-8 border-t border-border">
+              <p className="text-lg font-semibold text-primary mb-2">
+                Nossa meta é resolver suas necessidades
+              </p>
+              <p className="text-muted-foreground">
+                Atendimento personalizado • Produtos de qualidade • Entrega rápida
+              </p>
+            </div>
+          </div>
+
+          {/* Image */}
+          <div className="relative lg:h-[600px] animate-fade-in">
+            <div className="absolute inset-0 gradient-primary rounded-3xl opacity-10 blur-3xl"></div>
+            <div className="relative bg-card rounded-3xl shadow-2xl p-8 lg:p-12 border border-border">
+              <img
+                src="/logo.png"
+                alt="Alternativa Embalagens - Embalagens e Distribuidora"
+                className="w-full h-auto"
+              />
+              <div className="mt-8 space-y-4">
+                <div className="flex items-center space-x-3">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                    <span className="text-2xl font-bold text-primary">25+</span>
+                  </div>
+                  <div>
+                    <p className="font-semibold">Anos de experiência</p>
+                    <p className="text-sm text-muted-foreground">Desde 1999 no mercado</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
