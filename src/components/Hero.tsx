@@ -23,7 +23,7 @@ const Hero = () => {
           className="absolute inset-0 bg-cover bg-no-repeat"
           style={{ backgroundImage: 'url(/hero-bg.jpg)', backgroundPosition: 'center bottom' }}
         ></div>
-        <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/90 to-background/85"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-background/85 via-background/75 to-background/70"></div>
       </div>
 
       <div className="section-container w-full">
