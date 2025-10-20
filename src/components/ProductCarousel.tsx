@@ -77,12 +77,14 @@ const ProductCarousel = () => {
                         </CardContent>
                       </Card>
                     </DialogTrigger>
-                    <DialogContent className="max-w-[95vw] sm:max-w-4xl p-2 sm:p-4">
-                      <img
-                        src={image.src}
-                        alt={image.alt}
-                        className="w-full h-auto rounded-lg"
-                      />
+                    <DialogContent className="max-w-[95vw] max-h-[95vh] sm:max-w-6xl p-2 sm:p-4 overflow-auto">
+                      <div className="flex items-center justify-center">
+                        <img
+                          src={image.src}
+                          alt={image.alt}
+                          className="w-auto h-auto max-w-full max-h-[85vh] object-contain rounded-lg"
+                        />
+                      </div>
                     </DialogContent>
                   </Dialog>
                 </div>
