@@ -45,11 +45,11 @@ const Header = () => {
     >
       <nav className="section-container">
         <div className="flex items-center justify-between h-20">
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center space-x-2 sm:space-x-3">
             <img
               src="/logo.png"
               alt="Alternativa Embalagens"
-              className="h-12 w-auto"
+              className="h-10 sm:h-12 w-auto"
             />
           </div>
 

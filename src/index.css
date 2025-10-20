@@ -99,8 +99,13 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-background text-foreground font-sans antialiased;
+    overflow-x: hidden;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -119,5 +124,18 @@ All colors MUST be HSL.
 
   .gradient-overlay {
     background: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.7) 100%);
+  }
+
+  /* Smooth scrolling para navegação âncora */
+  html {
+    scroll-padding-top: 5rem;
+  }
+
+  /* Melhor quebra de palavras em mobile */
+  @media (max-width: 640px) {
+    p, span, a {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
   }
 }

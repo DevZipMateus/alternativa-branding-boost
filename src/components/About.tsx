@@ -43,71 +43,71 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-24 bg-muted/30">
+    <section id="about" className="py-12 sm:py-16 lg:py-24 bg-muted/30">
       <div className="section-container">
         {/* Nossa História */}
-        <div className="max-w-4xl mx-auto mb-20">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+        <div className="max-w-4xl mx-auto mb-12 sm:mb-16 lg:mb-20">
+          <div className="text-center mb-8 sm:mb-10 lg:mb-12">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
               Nossa <span className="text-primary">história</span>
             </h2>
           </div>
-          <div className="bg-card rounded-3xl p-8 md:p-12 border border-border shadow-lg">
-            <p className="text-lg text-foreground/90 leading-relaxed mb-6">
+          <div className="bg-card rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 border border-border shadow-lg">
+            <p className="text-base sm:text-lg text-foreground/90 leading-relaxed mb-4 sm:mb-6">
               A Alternativa Embalagens e Distribuidora nasceu com um propósito claro: <strong>facilitar o dia a dia de empresas e empreendedores</strong> oferecendo soluções práticas, eficientes e acessíveis em embalagens. 
             </p>
-            <p className="text-lg text-foreground/90 leading-relaxed mb-6">
+            <p className="text-base sm:text-lg text-foreground/90 leading-relaxed mb-4 sm:mb-6">
               Tudo começou quando seus fundadores perceberam a dificuldade que muitos negócios tinham para encontrar embalagens de qualidade com bom preço e entrega rápida. Foi então que decidiram criar uma empresa parceira, confiável e comprometida com a agilidade.
             </p>
-            <p className="text-lg text-foreground/90 leading-relaxed mb-6">
+            <p className="text-base sm:text-lg text-foreground/90 leading-relaxed mb-4 sm:mb-6">
               Com uma estrutura enxuta e foco total no atendimento humanizado, a Alternativa cresceu construindo relações de confiança com cada cliente atendido.
             </p>
-            <p className="text-lg text-primary font-semibold leading-relaxed">
+            <p className="text-base sm:text-lg text-primary font-semibold leading-relaxed">
               Hoje, seguimos com o mesmo propósito: ser mais do que um fornecedor — ser a escolha certa para quem busca praticidade, economia e parceria verdadeira.
             </p>
           </div>
         </div>
 
         {/* Por que esse nicho */}
-        <div className="max-w-4xl mx-auto mb-20">
-          <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-3xl p-8 md:p-12 border border-primary/20">
-            <div className="flex items-start gap-6 mb-6">
-              <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                <Package className="w-8 h-8 text-primary" />
+        <div className="max-w-4xl mx-auto mb-12 sm:mb-16 lg:mb-20">
+          <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 border border-primary/20">
+            <div className="flex items-start gap-4 sm:gap-6 mb-4 sm:mb-6">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <Package className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />
               </div>
               <div>
-                <h3 className="text-2xl md:text-3xl font-bold mb-4">
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 sm:mb-4">
                   Por que escolhemos esse nicho
                 </h3>
               </div>
             </div>
-            <p className="text-lg text-foreground/90 leading-relaxed mb-6">
+            <p className="text-base sm:text-lg text-foreground/90 leading-relaxed mb-4 sm:mb-6">
               Escolhemos atuar no segmento de embalagens porque entendemos que ele é essencial para o funcionamento de praticamente todo tipo de negócio — desde pequenos produtores e lojas locais até grandes indústrias e e-commerces.
             </p>
-            <p className="text-lg text-foreground/90 leading-relaxed mb-6">
+            <p className="text-base sm:text-lg text-foreground/90 leading-relaxed mb-4 sm:mb-6">
               O mercado carecia de fornecedores que unissem <strong className="text-primary">qualidade + preço justo + atendimento rápido</strong>, e vimos a oportunidade de fazer diferente.
             </p>
-            <p className="text-lg text-primary font-semibold leading-relaxed">
+            <p className="text-base sm:text-lg text-primary font-semibold leading-relaxed">
               Nosso objetivo não é apenas vender embalagens, mas oferecer soluções inteligentes que fortalecem os negócios dos nossos clientes.
             </p>
           </div>
         </div>
 
         {/* Missão e Visão */}
-        <div className="mb-16">
-          <div className="grid md:grid-cols-2 gap-8">
+        <div className="mb-10 sm:mb-12 lg:mb-16">
+          <div className="grid md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
             {mvvItems.map((item, index) => {
               const Icon = item.icon;
               return (
                 <div
                   key={index}
-                  className="bg-card rounded-2xl p-8 border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg"
+                  className="bg-card rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg"
                 >
-                  <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
-                    <Icon className="w-8 h-8 text-primary" />
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-xl bg-primary/10 flex items-center justify-center mb-4 sm:mb-6">
+                    <Icon className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />
                   </div>
-                  <h3 className="text-2xl font-bold mb-4">{item.title}</h3>
-                  <p className="text-lg text-muted-foreground leading-relaxed">
+                  <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">{item.title}</h3>
+                  <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
                     {item.description}
                   </p>
                 </div>
@@ -117,28 +117,28 @@ const About = () => {
         </div>
 
         {/* Valores */}
-        <div className="mb-16">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl md:text-4xl font-bold mb-4">
+        <div className="mb-10 sm:mb-12 lg:mb-16">
+          <div className="text-center mb-8 sm:mb-10 lg:mb-12">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">
               Nossos <span className="text-primary">valores</span>
             </h3>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
               Princípios que guiam cada decisão e cada atendimento
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {values.map((value, index) => {
               const Icon = value.icon;
               return (
                 <div
                   key={index}
-                  className="bg-card rounded-xl p-6 border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg group"
+                  className="bg-card rounded-xl p-5 sm:p-6 border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg group"
                 >
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                    <Icon className="w-6 h-6 text-primary" />
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-3 sm:mb-4 group-hover:scale-110 transition-transform">
+                    <Icon className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                   </div>
-                  <h4 className="text-lg font-bold mb-2">{value.title}</h4>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <h4 className="text-base sm:text-lg font-bold mb-2">{value.title}</h4>
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                     {value.description}
                   </p>
                 </div>
@@ -148,27 +148,27 @@ const About = () => {
         </div>
 
         {/* Localização */}
-        <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-3xl p-8 md:p-12 border border-primary/20">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+        <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 border border-primary/20">
+          <div className="grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
             <div>
-              <h3 className="text-2xl md:text-3xl font-bold mb-4">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4">
                 Localização privilegiada no centro
               </h3>
-              <p className="text-lg text-muted-foreground mb-6">
+              <p className="text-base sm:text-lg text-muted-foreground mb-4 sm:mb-6">
                 Estamos localizados no Edifício Alternativa, na Rua Nicodemos Nery, 71 - Centro. 
                 Uma localização estratégica para melhor atender nossos clientes.
               </p>
-              <div className="space-y-3">
+              <div className="space-y-2 sm:space-y-3">
                 <div>
-                  <p className="font-semibold text-lg">Horário de funcionamento:</p>
-                  <p className="text-muted-foreground">Segunda a sexta-feira: 7h30 às 18h30</p>
-                  <p className="text-muted-foreground">Sábado: 7h30 às 14h30</p>
-                  <p className="text-muted-foreground">Domingo: Fechado</p>
+                  <p className="font-semibold text-base sm:text-lg">Horário de funcionamento:</p>
+                  <p className="text-sm sm:text-base text-muted-foreground">Segunda a sexta-feira: 7h30 às 18h30</p>
+                  <p className="text-sm sm:text-base text-muted-foreground">Sábado: 7h30 às 14h30</p>
+                  <p className="text-sm sm:text-base text-muted-foreground">Domingo: Fechado</p>
                 </div>
               </div>
             </div>
-            <div className="flex items-center justify-center">
-              <div className="w-full max-w-md">
+            <div className="flex items-center justify-center mt-6 md:mt-0">
+              <div className="w-full max-w-sm sm:max-w-md">
                 <img
                   src="/logo.png"
                   alt="Alternativa Embalagens"
